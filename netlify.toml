@@ -5,6 +5,3 @@ publish = "dist"
 [build.environment]
 NODE_ENV = "production"
 NETLIFY_USE_YARN = "false"
-
-[[plugins]]
-package = "netlify-plugin-cache-clear"
