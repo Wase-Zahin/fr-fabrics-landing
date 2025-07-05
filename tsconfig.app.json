@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "composite": true,
-    "noEmit": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
@@ -14,6 +13,7 @@
       "DOM.Iterable"
     ],
     "module": "ESNext",
+    "emitDeclarationOnly": true,
     "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
