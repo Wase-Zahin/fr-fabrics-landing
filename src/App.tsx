@@ -3,6 +3,7 @@ import Header from "./Header/header.tsx";
 import Hero from "./Hero/hero.tsx";
 import Sec1 from "./Sec1/sec1.tsx";
 import Footer from "./Footer/footer.tsx";
+import Sec2 from "./Sec2/sec2.tsx";
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
             <Header/>
             <Hero/>
             <Sec1/>
-            {/*<Sec2/>*/}
+            <Sec2/>
             {/*<Sec3/>*/}
             {/*<Sec4/>*/}
             {/*<Sec5/>*/}

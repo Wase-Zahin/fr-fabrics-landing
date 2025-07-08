@@ -1,4 +1,4 @@
-import CityBG from "../assets/city_bg.png";
+import Yarn from "../assets/weaving.jpg";
 
 const Hero = () => {
     return (
@@ -7,7 +7,7 @@ const Hero = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: `url(${CityBG})`,
+                    backgroundImage: `url(${Yarn})`,
                     filter: "brightness(50%)",
                     zIndex: 0,
                 }}

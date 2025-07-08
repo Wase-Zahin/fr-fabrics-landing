@@ -20,11 +20,23 @@ const Sec1: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="text-2xl leading-relaxed max-w-xl">
+                        <div className="text-xl leading-relaxed max-w-xl">
                             <p>
-                                It became the parent of TEXWEAVE, TAD SOURCING LTD. TAD LOGISTIC LTD., TAD ENGINEERING,
-                                TAD
-                                AUTOS, TAD AVIATION, MAYE’S, REPLICA CREATIONS LTD., KLOTHEN and KOI THE BANGLADESH LTD.
+                                FR Group started the journey with a trading company named
+                                <span className="font-bold">GT SOURCE & SOLUTION</span> (Bangladesh) since 2007. From
+                                then GTSSBD
+                                doing yarn business in China, India, Pakistan, Indonesia, Malaysia and
+                                Vietnam to do export in Bangladesh and Turkey yarn market.
+                                In an era of 15 years yarn business we’ve stablished our China
+                                company from 2014 and started direct export from China in the name
+                                of <span className="font-bold">HANG ZHOU FUYANG BEIWANG TRADING CO. LTD. </span>
+                                It becomes one of the pioneer yarn exporters from China and become
+                                the second highest exporter in 2020-21 from Fuyang, Hangzhou as per
+                                listed company of China government.
+                                We’ve started our journey of <span
+                                className="font-bold">FR FABRCS LIMITED (FRFL)</span> in Bangladesh
+                                dedicated to fabric manufacturing to expand Bangladeshi textile
+                                market even further.
                             </p>
                         </div>
                     </div>
