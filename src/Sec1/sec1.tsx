@@ -22,23 +22,28 @@ const Sec1: React.FC = () => {
 
                         <div className="text-xl leading-relaxed max-w-xl">
                             <p>
-                                FR Group started the journey with a trading company named
-                                <span className="font-bold">GT SOURCE & SOLUTION</span> (Bangladesh) since 2007. From
-                                then GTSSBD
-                                doing yarn business in China, India, Pakistan, Indonesia, Malaysia and
-                                Vietnam to do export in Bangladesh and Turkey yarn market.
-                                In an era of 15 years yarn business we’ve stablished our China
-                                company from 2014 and started direct export from China in the name
-                                of <span className="font-bold">HANG ZHOU FUYANG BEIWANG TRADING CO. LTD. </span>
-                                It becomes one of the pioneer yarn exporters from China and become
-                                the second highest exporter in 2020-21 from Fuyang, Hangzhou as per
-                                listed company of China government.
-                                We’ve started our journey of <span
-                                className="font-bold">FR FABRCS LIMITED (FRFL)</span> in Bangladesh
-                                dedicated to fabric manufacturing to expand Bangladeshi textile
-                                market even further.
+                                FR Group began its journey in 2007 with a trading company named
+                                <span className="font-bold"> GT SOURCE & SOLUTION (GTSSBD)</span> in Bangladesh.
+                                Since then, GTSSBD has been involved in the yarn business across China, India, Pakistan,
+                                Indonesia, Malaysia, and Vietnam, focusing on exporting to the Bangladesh and Turkey
+                                yarn markets.
+                            </p>
+                            <p>
+                                Over 15 years in the yarn business, we established our China-based company in 2014 and
+                                started direct exports from China under the name
+                                <span className="font-bold"> HANG ZHOU FUYANG BEIWANG TRADING CO. LTD.</span>
+                                It became one of the pioneer yarn exporters from China and was ranked as the
+                                second-highest exporter in 2020-21 from Fuyang, Hangzhou, as per the listings
+                                of the Chinese government.
+                            </p>
+                            <p>
+                                Building on this success, we started our new venture,
+                                <span className="font-bold"> FR FABRICS LIMITED (FRFL)</span> in Bangladesh,
+                                dedicated to fabric manufacturing with the goal of further expanding the
+                                Bangladeshi textile market.
                             </p>
                         </div>
+
                     </div>
                 </div>
 

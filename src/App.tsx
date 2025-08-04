@@ -4,6 +4,9 @@ import Hero from "./Hero/hero.tsx";
 import Sec1 from "./Sec1/sec1.tsx";
 import Footer from "./Footer/footer.tsx";
 import Sec2 from "./Sec2/sec2.tsx";
+import VisionMission from "./VisionMission";
+import ManufacturingUnit from "./ManufacturingUnit";
+import Services from "./Services";
 
 function App() {
     return (
@@ -12,9 +15,9 @@ function App() {
             <Hero/>
             <Sec1/>
             <Sec2/>
-            {/*<Sec3/>*/}
-            {/*<Sec4/>*/}
-            {/*<Sec5/>*/}
+            <VisionMission/>
+            <ManufacturingUnit/>
+            <Services/>
             {/*<Review/>*/}
             {/*<Faqs/>*/}
             <Footer/>
