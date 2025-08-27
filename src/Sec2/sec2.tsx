@@ -1,15 +1,20 @@
 import React from "react";
-import CloudBG from "../assets/guy.webp";
+import BG from "../assets/lidya-nada-grQh_x_vZKM-unsplash.jpg";
 
 const Sec2: React.FC = () => {
     return (
-        <section
-            className="relative bg-cover bg-center bg-no-repeat py-32 px-6 lg:px-20"
-            style={{
-                backgroundImage: `url(${CloudBG})`,
-            }}
-        >
-            <div className="flex flex-col text-white gap-10 max-w-7xl mx-auto text-black">
+        <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+            {/* Background image with fade effect */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src={BG}
+                    alt="Background"
+                    className="w-full h-full object-cover brightness-55"
+                />
+            </div>
+
+            {/* Foreground content */}
+            <div className="relative z-10 flex flex-col text-white gap-10 max-w-7xl mx-auto">
                 <div className="mb-10">
                     <div className="flex flex-col gap-12 justify-between">
                         <div className="flex flex-col gap-6">
@@ -20,30 +25,25 @@ const Sec2: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="text-xl leading-relaxed max-w-xl">
+                        <div className="text-xl leading-relaxed max-w-xl bg-black/50 p-4 rounded">
                             <p>
                                 In 2018, <span className="font-bold">GTSSBD</span> (Bangladesh) decided to establish a
-                                fabric
-                                manufacturing unit and started production of woven fabrics in Bangladesh by forming its
-                                own company
-                                named <span className="font-bold">FR FABRICS LIMITED (FRFL)</span>.
+                                fabric manufacturing unit and started production of woven fabrics in Bangladesh by
+                                forming its own company named <span
+                                className="font-bold">FR FABRICS LIMITED (FRFL)</span>.
                             </p>
                             <p>
                                 <span className="font-bold">FR FABRICS LIMITED (FRFL)</span> produced all kinds of woven
-                                fabrics as
-                                per the standards of the European and USA market’s solid dyeing requirements in its own
-                                weaving unit.
-                                In 2023, FR FABRICS LIMITED (FRFL) was formally incorporated as a limited company.
+                                fabrics as per the standards of the European and USA market’s solid dyeing requirements
+                                in its own weaving unit. In 2023, FR FABRICS LIMITED (FRFL) was formally incorporated as
+                                a limited company.
                             </p>
                             <p>
                                 FRFL produces innovative woven fabrics using high-tech machinery and equipment. With
-                                on-time production,
-                                a strong focus on quality, uniqueness in diversification, and honesty at every step, we
-                                are committed to
-                                maximizing customer satisfaction.
+                                on-time production, a strong focus on quality, uniqueness in diversification, and
+                                honesty at every step, we are committed to maximizing customer satisfaction.
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>

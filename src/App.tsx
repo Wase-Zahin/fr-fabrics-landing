@@ -7,6 +7,7 @@ import Sec2 from "./Sec2/sec2.tsx";
 import VisionMission from "./VisionMission";
 import ManufacturingUnit from "./ManufacturingUnit";
 import Services from "./Services";
+import StrengthsShowcase from "./Strength";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <VisionMission/>
             <ManufacturingUnit/>
             <Services/>
+            <StrengthsShowcase/>
             {/*<Review/>*/}
             {/*<Faqs/>*/}
             <Footer/>

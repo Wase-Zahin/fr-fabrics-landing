@@ -1,15 +1,23 @@
 import React from "react";
+import BG from "../assets/ethan-bodnar-kgC99X3WH1w-unsplash.jpg";
 
 const VisionMission: React.FC = () => {
     return (
-        <section
-            className="relative bg-gradient-to-br from-red-50 via-white to-red-100 py-32 px-6 lg:px-20"
-        >
-            <div className="flex flex-col gap-16 max-w-7xl mx-auto text-black">
+        <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+            {/* Background image with fade effect */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src={BG}
+                    alt="Background"
+                    className="w-full h-full object-cover brightness-75"
+                />
+            </div>
 
+            {/* Foreground content */}
+            <div className="relative z-10 flex flex-col gap-16 max-w-7xl mx-auto text-black">
                 {/* Heading */}
                 <div className="text-center">
-                    <h2 className="text-6xl font-bold mb-4">Company Vision &amp; Mission</h2>
+                    <h2 className="text-6xl text-white font-bold mb-4">Company Vision &amp; Mission</h2>
                     <div className="flex items-center justify-center space-x-5">
                         <div className="w-2 h-2 bg-red-600 rotate-45"></div>
                         <div className="w-24 h-0.5 bg-red-600"></div>
@@ -18,7 +26,6 @@ const VisionMission: React.FC = () => {
 
                 {/* Vision & Mission grid */}
                 <div className="grid lg:grid-cols-2 gap-12 text-lg leading-relaxed">
-
                     {/* Vision */}
                     <div className="bg-white p-8 shadow-lg rounded-xl">
                         <h3 className="text-3xl font-semibold mb-4">Vision</h3>
@@ -52,7 +59,6 @@ const VisionMission: React.FC = () => {
                             for our planet and the countless lives it shelters.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
