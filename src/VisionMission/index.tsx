@@ -4,7 +4,7 @@ import BG from "../assets/ethan-bodnar-kgC99X3WH1w-unsplash.jpg";
 const VisionMission: React.FC = () => {
     return (
         <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
-            {/* Background image with fade effect */}
+            {/* Background */}
             <div className="absolute inset-0 z-0">
                 <img
                     src={BG}
@@ -13,50 +13,42 @@ const VisionMission: React.FC = () => {
                 />
             </div>
 
-            {/* Foreground content */}
-            <div className="relative z-10 flex flex-col gap-16 max-w-7xl mx-auto text-black">
+            {/* Content */}
+            <div className="relative z-10 max-w-7xl mx-auto text-white">
                 {/* Heading */}
-                <div className="text-center">
-                    <h2 className="text-6xl text-white font-bold mb-4">Company Vision &amp; Mission</h2>
-                    <div className="flex items-center justify-center space-x-5">
+                <div className="text-center mb-16">
+                    <h2 className="text-5xl lg:text-6xl font-bold">Company Vision &amp; Mission</h2>
+                    <div className="flex items-center justify-center space-x-5 mt-4">
                         <div className="w-2 h-2 bg-red-600 rotate-45"></div>
                         <div className="w-24 h-0.5 bg-red-600"></div>
                     </div>
                 </div>
 
-                {/* Vision & Mission grid */}
+                {/* Vision + Mission */}
                 <div className="grid lg:grid-cols-2 gap-12 text-lg leading-relaxed">
-                    {/* Vision */}
-                    <div className="bg-white p-8 shadow-lg rounded-xl">
+                    <div className="bg-white/90 backdrop-blur-md p-8 shadow-xl rounded-2xl text-gray-900">
                         <h3 className="text-3xl font-semibold mb-4">Vision</h3>
                         <p className="mb-4">
                             At the heart of our loom we have the dedication to weaving excellence.
-                            We precisely craft fabrics that sing with quality, inspiring designers and
-                            makers to unleash their creative spirits. From the touch of luxurious
-                            sateen to the strength of resilient canvas, each thread tells a story of
-                            care and innovation.
+                            We precisely craft fabrics that sing with quality, inspiring designers
+                            and makers to unleash their creative spirits.
                         </p>
                         <p>
-                            Our commitment extends beyond the surface, embracing sustainable practices
-                            that minimize our footprint and maximize positive impact. Every yard fabric
-                            is a promise to enrich lives, one beautiful textile at a time.
+                            Our commitment extends beyond the surface, embracing sustainable
+                            practices that minimize our footprint and maximize positive impact.
                         </p>
                     </div>
 
-                    {/* Mission */}
-                    <div className="bg-white p-8 shadow-lg rounded-xl">
+                    <div className="bg-white/90 backdrop-blur-md p-8 shadow-xl rounded-2xl text-gray-900">
                         <h3 className="text-3xl font-semibold mb-4">Mission</h3>
                         <p className="mb-4">
-                            We envision a future where fabrics whisper tales of both timeless style
-                            and unwavering ecological responsibility. As pioneers in sustainable
-                            practices, we aim to become a woven tapestry of innovation, constantly
-                            pushing the boundaries of what's possible.
+                            We envision a future where fabrics whisper tales of timeless style
+                            and ecological responsibility. As pioneers in sustainability, we
+                            push the boundaries of what’s possible.
                         </p>
                         <p>
-                            We dream of building bridges, connecting passionate communities of artisans
-                            and storytellers across the globe. Our textiles will become more than mere
-                            materials; they will be vibrant threads, weaving together a brighter future
-                            for our planet and the countless lives it shelters.
+                            We dream of connecting communities of artisans and storytellers
+                            worldwide, weaving together a brighter future for our planet.
                         </p>
                     </div>
                 </div>
