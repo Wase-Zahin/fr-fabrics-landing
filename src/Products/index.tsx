@@ -24,6 +24,7 @@ import water_repellent_fabric from "../assets/products/water_repellent_fabric.pn
 import paper_like_stiff_fabric from "../assets/products/paper_like_stiff_fabric.png";
 import brushing_fabric from "../assets/products/brushing_fabric.png";
 import grindle_fabric from "../assets/products/grindle_fabric.png";
+import twtwill from "../assets/products/tw_twill_fabric.jpg";
 
 const products = [
     {name: "Poplin Fabric", img: poplin_fabric},
@@ -50,11 +51,12 @@ const products = [
     {name: "Paper-Like Stiff Fabric", img: paper_like_stiff_fabric},
     {name: "Brushing Fabric", img: brushing_fabric},
     {name: "Grindle Fabric", img: grindle_fabric},
+    {name: "TC Twill Fabric", img: twtwill},
 ];
 
 const Products: React.FC = () => {
     return (
-        <section className="py-12 px-6 bg-gray-50">
+        <section className="py-12 mt-32 px-6 bg-gray-50">
             <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
                 Our Products
             </h2>

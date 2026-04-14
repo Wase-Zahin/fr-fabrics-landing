@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
-import TADlogo from "../assets/tad-grpoup-logo.png";
+import FRGroupLogo from "../assets/fr-logo-removebg-preview.png";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,10 +10,12 @@ const Header = () => {
         <header className="absolute top-0 w-full z-10 text-white">
             <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
-            <div className="relative max-w-7xl mx-auto px-4 py-3 flex items-center justify-between z-10">
-                <div className="flex items-center space-x-3">
-                    <img src={TADlogo} alt="GTT Logo" className="h-12 w-auto"/>
-                </div>
+            <div className="relative max-w-7xl mx-auto py-3 flex items-center justify-between z-10">
+                <Link to={'/'}>
+                    <div className="flex items-center space-x-3">
+                        <img src={FRGroupLogo} alt="GTT Logo" className="h-18 w-auto"/>
+                    </div>
+                </Link>
 
                 {/* Desktop Menu */}
                 <div
@@ -20,18 +23,22 @@ const Header = () => {
                     <button className="cursor-pointer transition-colors duration-300 hover:text-red-700">
                         HOME
                     </button>
+                    <button className="cursor-pointer transition-colors duration-300 hover:text-red-700">ABOUT US
+                    </button>
                     <button className="cursor-pointer transition-colors duration-300 hover:text-red-700">OUR
                         BUSINESS
                     </button>
+                    <Link to={'/products'}>
+                        <button className="cursor-pointer transition-colors duration-300 hover:text-red-700">PRODUCTS
+                        </button>
+                    </Link>
+
                     <button
                         className="cursor-pointer transition-colors duration-300 hover:text-red-700">CONTACT
                         US
                     </button>
                     <button
-                        className="cursor-pointer transition-colors duration-300 hover:text-red-700">BLOG
-                    </button>
-                    <button
-                        className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+                        className="bg-[#0F6155] cursor-pointer hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition">
                         Get Our Profile
                     </button>
                 </div>

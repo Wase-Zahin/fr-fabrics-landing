@@ -12,13 +12,15 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 text-white max-w-3xl px-6">
-                <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                    Our Business Focus On
+            <div className="relative z-10 text-white text-left max-w-3xl px-6">
+                <h1
+                    className="text-5xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-[#0F6155] to-white bg-clip-text text-transparent drop-shadow-lg"
+                >
+                    FR FABRICS LIMITED (FRFL)
                 </h1>
                 <p className="text-xl text-gray-200">
-                    Delivering excellence in fabrics, yarns, and global sourcing with
-                    innovation and trust.
+                    FR FABRICS LIMITED (FRFL) produces all kinds of woven fabric as per
+                    European and USA market standards.
                 </p>
             </div>
         </section>

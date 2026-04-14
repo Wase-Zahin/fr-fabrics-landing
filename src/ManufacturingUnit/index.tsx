@@ -36,7 +36,7 @@ const ManufacturingUnit: React.FC = () => {
                         <div className="w-24 h-0.5 bg-red-600"></div>
                     </div>
                     <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                        At FR Group, we have a remarkable production capacity of
+                        At FRFL, we have a remarkable production capacity of
                         <span className="font-semibold"> 1 Million Yards Woven Fabric</span> per month.
                         Our state-of-the-art facilities and highly skilled workforce enable us
                         to meet and exceed customer expectations.

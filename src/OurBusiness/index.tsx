@@ -1,5 +1,4 @@
 import React from "react";
-import BG from "../assets/svitlana-HbiRi1Owk9k-unsplash.jpg";
 
 const OurBusiness: React.FC = () => {
     return (
@@ -7,40 +6,43 @@ const OurBusiness: React.FC = () => {
             {/* Background */}
             <div className="absolute inset-0">
                 <img
-                    src={BG}
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
                     alt="Background"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-white/70"/>
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-gray-800/90 to-black/95"/>
             </div>
 
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto">
-                <div className="mb-12">
-                    <h2 className="text-5xl lg:text-6xl font-bold mb-4">Our Business</h2>
-                    <div className="flex items-center space-x-5 mb-8">
-                        <div className="w-2 h-2 bg-red-600 rotate-45"></div>
-                        <div className="w-24 h-0.5 bg-red-600"></div>
+                <div className="mb-16">
+                    <h2 className="text-5xl lg:text-6xl font-bold mb-6 text-white">
+                        Our Business
+                    </h2>
+                    <div className="flex items-center space-x-5 mb-10">
+                        <div className="w-3 h-3 bg-red-500 rotate-45"></div>
+                        <div className="w-32 h-0.5 bg-gradient-to-r from-red-500 to-red-700"></div>
                     </div>
-                    <div className="text-lg leading-relaxed bg-white p-6 rounded-xl shadow-lg max-w-3xl">
-                        <p className="mb-4">
+                    <div
+                        className="text-lg leading-relaxed bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 shadow-2xl max-w-4xl">
+                        <p className="mb-5 text-gray-200">
                             FR Group began its journey in 2007 with{" "}
-                            <span className="font-bold">
-                GT SOURCE & SOLUTION (GTSSBD)
-              </span>{" "}
+                            <span className="font-bold text-red-400">
+                                GT SOURCE & SOLUTION (GTSSBD)
+                            </span>{" "}
                             in Bangladesh, trading yarns across China, India, Pakistan,
                             Indonesia, Malaysia, and Vietnam.
                         </p>
-                        <p className="mb-4">
+                        <p className="mb-5 text-gray-200">
                             In 2014, we established{" "}
-                            <span className="font-bold">
-                HANG ZHOU FUYANG BEIWANG TRADING CO. LTD.
-              </span>{" "}
+                            <span className="font-bold text-red-400">
+                                HANG ZHOU FUYANG BEIWANG TRADING CO. LTD.
+                            </span>{" "}
                             in China, which became one of the top yarn exporters from Hangzhou.
                         </p>
-                        <p>
+                        <p className="text-gray-200">
                             Building on this,{" "}
-                            <span className="font-bold">FR FABRICS LIMITED (FRFL)</span> was
+                            <span className="font-bold text-red-400">FR FABRICS LIMITED (FRFL)</span> was
                             launched in Bangladesh, dedicated to fabric manufacturing and
                             expanding the textile market.
                         </p>
@@ -62,15 +64,12 @@ const OurBusiness: React.FC = () => {
                     ].map((name, index) => (
                         <div
                             key={index}
-                            className="bg-white p-4 rounded-xl shadow flex items-center justify-center"
+                            className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 shadow-xl hover:shadow-2xl hover:border-red-500/50 transition-all duration-300 flex items-center justify-center group"
                         >
-                            <img
-                                src={`https://via.placeholder.com/150x60?text=${encodeURIComponent(
-                                    name
-                                )}`}
-                                alt={name}
-                                className="object-contain max-h-10"
-                            />
+                            <span
+                                className="text-white font-bold text-sm text-center group-hover:text-red-400 transition-colors duration-300">
+                                {name}
+                            </span>
                         </div>
                     ))}
                 </div>
