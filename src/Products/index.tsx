@@ -26,6 +26,7 @@ import brushing_fabric from "../assets/products/brushing_fabric.png";
 import grindle_fabric from "../assets/products/grindle_fabric.png";
 import twtwill from "../assets/products/tw_twill_fabric.jpg";
 
+
 const products = [
     {name: "Poplin Fabric", img: poplin_fabric},
     {name: "Voile Fabric", img: voile_fabric},
