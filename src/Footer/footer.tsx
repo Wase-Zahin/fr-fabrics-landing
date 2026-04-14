@@ -1,72 +1,93 @@
 const Footer = () => {
     return (
-        <footer className="bg-[#27261D] flex flex-col gap-12 text-gray-300 px-24 py-30">
-            <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-40">
-                {/* About / Description */}
-                <div className="space-y-4">
-                    <p>
-                        TAD Group of the company is a Bangladeshi company that has a portfolio
-                        with several businesses, we are focused on international markets & local business.
-                    </p>
-                    <p className="text-gray-500">hello@tadgroupbd.com</p>
-                    <p className="text-gray-500">+880-2-8837230, 8837231</p>
-                </div>
+        <footer className="bg-[#1F1E17] text-gray-300 px-8 md:px-24 py-20">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
 
-                {/* Group Business - two columns */}
-                <div>
-                    <h3 className="text-white font-semibold mb-3">Group Business</h3>
-                    <div className="grid grid-cols-2 gap-12 text-gray-400">
-                        <ul className="space-y-1">
-                            <li>Texweave</li>
-                            <li>TAD Sourcing ltd.</li>
-                            <li>TAD Logistic Ltd.</li>
-                            <li>Mayc's Garments Ltd.</li>
-                        </ul>
-                        <ul className="space-y-1">
-                            <li>TAD Engineering</li>
-                            <li>TAD Aviation Ltd.</li>
-                            <li>TAD Autos</li>
-                            <li>KLOTHEN</li>
-                            <li>KOI Thé Bangladesh</li>
-                        </ul>
+                {/* Company Info */}
+                <div className="space-y-6">
+                    <h2 className="text-white font-bold text-3xl tracking-wider leading-tight">
+                        FR <br/> GROUP
+                    </h2>
+
+                    <p className="text-gray-400 leading-relaxed text-sm">
+                        FR Group is a Bangladesh-based company with a diverse portfolio
+                        across sourcing, logistics, manufacturing, and international trade.
+                        We focus on delivering efficient solutions in both global and
+                        local markets.
+                    </p>
+
+                    <div className="space-y-1 text-sm text-gray-500">
+                        <p>info@frgroup.com.bd</p>
+                        <p>+8801805636613</p>
                     </div>
                 </div>
 
-                {/* About Group */}
+                {/* International Offices */}
                 <div>
-                    <h3 className="text-white font-semibold mb-3">About Group</h3>
-                    <ul className="space-y-1 text-gray-400">
-                        <li>About Us</li>
-                        <li>CSR</li>
-                        <li>Values & Beliefs</li>
-                        <li>Contact Us</li>
+                    <h3 className="text-white font-semibold mb-6 tracking-wide">
+                        International Offices
+                    </h3>
+
+                    <div className="space-y-6 text-gray-400 text-sm leading-relaxed">
+                        <div className="border-l border-gray-600 pl-4">
+                            <p className="text-white font-medium">China</p>
+                            <p>
+                                Room 1104, Lehui Cheng Building<br/>
+                                Gong Wang Street, Fuyang<br/>
+                                Hangzhou 311400, China
+                            </p>
+                        </div>
+
+                        <div className="border-l border-gray-600 pl-4">
+                            <p className="text-white font-medium">India</p>
+                            <p>
+                                Purva Palm Beach, J-1803<br/>
+                                Kyalasanhalli, K.R. Puram<br/>
+                                Bengaluru, Karnataka, India
+                            </p>
+                        </div>
+
+                        <div className="border-l border-gray-600 pl-4">
+                            <p className="text-white font-medium">Pakistan</p>
+                            <p>
+                                6-E, Block H, Gulberg II<br/>
+                                Lahore 54600, Pakistan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Quick Links */}
+                <div>
+                    <h3 className="text-white font-semibold mb-6 tracking-wide">
+                        About Group
+                    </h3>
+
+                    <ul className="space-y-3 text-gray-400 text-sm">
+                        <li className="hover:text-white cursor-pointer transition">About Us</li>
+                        <li className="hover:text-white cursor-pointer transition">CSR</li>
+                        <li className="hover:text-white cursor-pointer transition">Values & Beliefs</li>
+                        <li className="hover:text-white cursor-pointer transition">Contact Us</li>
                     </ul>
                 </div>
             </div>
 
-            <div className="h-0.5 bg-gray-500">
+            {/* Divider */}
+            <div
+                className="max-w-7xl mx-auto mt-16 mb-8 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"/>
 
-            </div>
-            {/* Logo + copyright */}
-            <div className="flex flex-col justify-between">
-                {/* Logo */}
-                <div className="mb-4">
-                    <h2 className="text-white font-bold text-3xl tracking-wider leading-tight">
-                        TAD <br/> GROUP
-                    </h2>
-                </div>
+            {/* Bottom Section */}
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
 
-                {/* Copyright */}
-                <p className="text-gray-500 text-sm mb-4">
-                    2025 © TAD Group – Copyright All Rights Reserved. Developed by TAD Digital
+                <p className="text-gray-500 text-sm">
+                    2026 © FR Group — All Rights Reserved
                 </p>
 
-                {/* Social Links */}
-                <div className="flex space-x-4 text-xs uppercase text-gray-400 font-semibold tracking-widest">
-                    <a href="#" className="hover:text-white">Facebook.</a>
-                    <a href="#" className="hover:text-white">Twitter.</a>
-                    <a href="#" className="hover:text-white">LinkedIn.</a>
-                    <a href="#" className="hover:text-white">Instagram.</a>
+                <div className="flex space-x-6 text-xs uppercase text-gray-400 font-semibold tracking-widest">
+                    <a href="https://www.facebook.com/share/17ToHdFF1F/"
+                       className="hover:text-white transition">Facebook</a>
+                    <a href="https://www.linkedin.com/company/fr-fabrics-limited/"
+                       className="hover:text-white transition">LinkedIn</a>
                 </div>
             </div>
         </footer>
