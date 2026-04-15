@@ -1,4 +1,8 @@
 import React from "react";
+import logo1 from "../assets/ourlogos/WhatsApp Image 2026-04-15 at 1.10.38 PM.jpeg";
+import logo2 from "../assets/ourlogos/WhatsApp Image 2026-04-15 at 1.10.27 PM.jpeg";
+import logo3 from "../assets/ourlogos/WhatsApp Image 2026-04-15 at 1.11.23 PM.jpeg";
+import logo4 from "../assets/ourlogos/WhatsApp Image 2026-04-15 at 1.13.35 PM.jpeg";
 
 const OurBusiness: React.FC = () => {
     return (
@@ -50,26 +54,17 @@ const OurBusiness: React.FC = () => {
                 </div>
 
                 {/* Logos */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-                    {[
-                        "TEXWEAVE",
-                        "TAD SOURCING",
-                        "TAD LOGISTIC",
-                        "TAD ENGINEERING",
-                        "TAD AVIATION",
-                        "TAD AUTOS",
-                        "MAYC'S",
-                        "KOI THÉ",
-                        "KLOTHEN",
-                    ].map((name, index) => (
+                <div className="flex flex-row items-center justify-start gap-8">
+                    {[logo1, logo2, logo3, logo4].map((logo, index) => (
                         <div
                             key={index}
-                            className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 shadow-xl hover:shadow-2xl hover:border-red-500/50 transition-all duration-300 flex items-center justify-center group"
+                            className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm p-4 rounded-xl border border-gray-700/50 shadow-xl hover:shadow-2xl hover:border-red-500/50 transition-all duration-300 flex items-center justify-center"
                         >
-                            <span
-                                className="text-white font-bold text-sm text-center group-hover:text-red-400 transition-colors duration-300">
-                                {name}
-                            </span>
+                            <img
+                                src={logo}
+                                alt={`Logo ${index + 1}`}
+                                style={{width: 140, height: 70, objectFit: "contain"}}
+                            />
                         </div>
                     ))}
                 </div>
