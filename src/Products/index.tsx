@@ -24,7 +24,7 @@ import water_repellent_fabric from "../assets/products/water_repellent_fabric.pn
 import paper_like_stiff_fabric from "../assets/products/paper_like_stiff_fabric.png";
 import brushing_fabric from "../assets/products/brushing_fabric.png";
 import grindle_fabric from "../assets/products/grindle_fabric.png";
-import twtwill from "../assets/products/tw_twill_fabric.jpg";
+import twtwill from "../assets/products/tw_twill_fabric.png";
 
 
 const products = [
